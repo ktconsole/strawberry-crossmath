@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Strawberry Crossmath</title>
+  <meta name="description" content="Official Privacy Policy for Strawberry Crossmath mobile game. Compliant with Google Play Store Policies, Google Mobile Ads (AdMob), COPPA, and Data Safety guidelines.">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root {
+      --primary: #334B5F;
+      --primary-dark: #20313F;
+      --primary-light: #4A6780;
+      --accent: #F48A43;
+      --accent-strawberry: #E55353;
+      --accent-green: #438A2E;
+      --bg: #F4F7F9;
+      --card-bg: #FFFFFF;
+      --text-main: #2C3E50;
+      --text-muted: #607282;
+      --border: #D8E2E9;
+      --border-focus: #8BAEC9;
+      --shadow: 0 4px 20px rgba(51, 75, 95, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      background-color: var(--bg);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header-banner {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      padding: 48px 20px 40px;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(244, 138, 67, 0.2);
+      border: 1px solid rgba(244, 138, 67, 0.5);
+      color: #FFB17A;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .app-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .app-subtitle {
+      font-size: 1.05rem;
+      color: #C3D5E4;
+      max-width: 600px;
+      margin: 0 auto 16px;
+    }
+
+    .meta-info {
+      font-size: 0.88rem;
+      color: #A3BFD6;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin: -24px auto 32px;
+    }
+
+    .summary-card {
+      background: var(--card-bg);
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .summary-card .icon {
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+    }
+
+    .summary-card h4 {
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .summary-card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    main {
+      padding-bottom: 60px;
+    }
+
+    .policy-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      color: var(--primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 2px solid #EBF1F5;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      color: var(--primary-light);
+      margin: 18px 0 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 0.98rem;
+    }
+
+    ul, ol {
+      margin: 10px 0 16px 24px;
+      font-size: 0.96rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background: #F0F6FA;
+      border-left: 4px solid var(--primary-light);
+      padding: 16px 18px;
+      border-radius: 0 10px 10px 0;
+      margin: 16px 0;
+      font-size: 0.94rem;
+    }
+
+    .highlight-box.warning {
+      background: #FFF7F0;
+      border-left-color: var(--accent);
+    }
+
+    .highlight-box.green {
+      background: #F1F8ED;
+      border-left-color: var(--accent-green);
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid var(--border);
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    .data-table th {
+      background-color: #EDF3F7;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .data-table tr:nth-child(even) {
+      background-color: #FBFDFE;
+    }
+
+    .opt-out-steps {
+      background: #FAFCFE;
+      border: 1px solid #DCE6EE;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 14px 0;
+    }
+
+    .opt-out-steps ol {
+      margin-left: 20px;
+    }
+
+    .opt-out-steps li {
+      font-weight: 500;
+    }
+
+    .contact-banner {
+      background: linear-gradient(135deg, #334B5F 0%, #273B4D 100%);
+      color: #FFFFFF;
+      padding: 24px;
+      border-radius: 14px;
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    .contact-banner a {
+      color: #FFB17A;
+      font-size: 1.1rem;
+      word-break: break-all;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 40px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      .header-banner {
+        padding: 36px 16px 32px;
+      }
+      .app-title {
+        font-size: 1.85rem;
+      }
+      .policy-card {
+        padding: 22px 18px;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      .data-table th, .data-table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-banner">
+    <div class="container">
+      <div class="badge">🍓 Google Play Developer Policy Compliant</div>
+      <h1 class="app-title">Privacy Policy</h1>
+      <p class="app-subtitle">Official Privacy Statement for Strawberry Crossmath</p>
+      <div class="meta-info">
+        <strong>Effective Date:</strong> October 2, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> October 2, 2026
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="icon">🔒</div>
+        <h4>No Personal Accounts</h4>
+        <p>No login, email, password, or sensitive details required.</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">💾</div>
+        <h4>Local Game Data</h4>
+        <p>Puzzles and progress stored solely on your device.</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">🛡️</div>
+        <h4>COPPA Compliant</h4>
+        <p>Safe for families and compliant with Google Play Families Policy.</p>
+      </div>
+      <div class="summary-card">
+        <div class="icon">🔐</div>
+        <h4>Encrypted in Transit</h4>
+        <p>All network data encrypted using modern HTTPS (TLS).</p>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <article class="policy-card">
+      <h2>1. Overview &amp; Introduction</h2>
+      <p>
+        Welcome to <strong>Strawberry Crossmath</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;). We are committed to safeguarding your privacy and ensuring transparency regarding any data processed when you download, install, and play our mathematical crossword puzzle game.
+      </p>
+      <p>
+        This Privacy Policy explains what information may be collected by third-party service providers, how it is handled, and the choices available to you. Strawberry Crossmath is designed to be played seamlessly offline and online without creating an account or providing any personally identifiable information.
+      </p>
+      <div class="highlight-box green">
+        <strong>Key Privacy Commitment:</strong> Strawberry Crossmath does NOT collect or store your personal name, physical address, email address, phone number, contacts, financial info, or biometric data.
+      </div>
+    </article>
+
+    <!-- Section 2 -->
+    <article class="policy-card">
+      <h2>2. Information We Do NOT Collect</h2>
+      <p>
+        To preserve your privacy and simplicity:
+      </p>
+      <ul>
+        <li><strong>No User Account or Login:</strong> You do not need to register, provide an email address, or link any social media profile to play.</li>
+        <li><strong>No Sensitive Personal Information:</strong> We do not collect names, government IDs, phone numbers, or passwords.</li>
+        <li><strong>No Financial Data:</strong> We do not process or store credit card numbers, bank information, or billing addresses.</li>
+        <li><strong>No Access to Device Sensors / Media:</strong> The App does not request camera, microphone, photo gallery, or device contact permissions.</li>
+        <li><strong>Local Storage of Progress:</strong> Your level completions, stars, hints, and sound preferences are stored locally on your device (via secure local device storage) and are never sent to our servers.</li>
+      </ul>
+    </article>
+
+    <!-- Section 3 -->
+    <article class="policy-card">
+      <h2>3. Third-Party Advertising &amp; Analytics (Google AdMob)</h2>
+      <p>
+        Strawberry Crossmath is free to play and is supported by non-intrusive advertisements. We integrate the official <strong>Google Mobile Ads SDK (AdMob)</strong> to serve banner, interstitial, and rewarded hint advertisements.
+      </p>
+      <p>
+        When you play the game while connected to the internet, Google Mobile Ads may automatically collect and process certain device and diagnostic information to deliver advertisements, prevent fraud, and measure ad performance:
+      </p>
+      <ul>
+        <li><strong>Device Identifiers:</strong> Google Advertising ID (AAID) or ID for Advertising, which allows ad networks to recognize your device for ad delivery, attribution, and frequency capping.</li>
+        <li><strong>IP Address &amp; Approximate Location:</strong> Your Internet Protocol (IP) address is used to determine general, coarse geographical location (country or city level) to serve regionally relevant ads and detect fraud. Precise GPS location is NEVER requested or collected.</li>
+        <li><strong>Interaction &amp; Diagnostic Logs:</strong> Technical metrics such as ad impressions, click events, app crash logs, launch timestamps, and performance diagnostics.</li>
+      </ul>
+      <p>
+        To learn more about how Google processes and protects advertising data, please review Google&rsquo;s official policies:
+      </p>
+      <div class="highlight-box">
+        🔗 <strong>Google Privacy &amp; Terms:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a><br>
+        🔗 <strong>How Google Uses Information From Apps:</strong> <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a>
+      </div>
+    </article>
+
+    <!-- Section 4 -->
+    <article class="policy-card">
+      <h2>4. Google Play Data Safety Compliance</h2>
+      <p>
+        In accordance with the Google Play Store Data Safety requirements, the table below provides a complete summary of data types and their handling:
+      </p>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Data Types</th>
+            <th>Collected By</th>
+            <th>Purpose</th>
+            <th>Encrypted in Transit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Device or Other IDs</strong></td>
+            <td>Google Advertising ID (AAID)</td>
+            <td>Google Mobile Ads (AdMob)</td>
+            <td>Advertising, analytics, fraud prevention</td>
+            <td>Yes (HTTPS / TLS)</td>
+          </tr>
+          <tr>
+            <td><strong>Location</strong></td>
+            <td>Coarse / approximate location (from IP)</td>
+            <td>Google Mobile Ads (AdMob)</td>
+            <td>Regional ad serving, fraud detection</td>
+            <td>Yes (HTTPS / TLS)</td>
+          </tr>
+          <tr>
+            <td><strong>App Info &amp; Performance</strong></td>
+            <td>Crash logs, diagnostics, latency metrics</td>
+            <td>Google Mobile Ads (AdMob)</td>
+            <td>App performance, analytics</td>
+            <td>Yes (HTTPS / TLS)</td>
+          </tr>
+          <tr>
+            <td><strong>App Activity</strong></td>
+            <td>Ad views, clicks, interactions</td>
+            <td>Google Mobile Ads (AdMob)</td>
+            <td>Ad measurement &amp; attribution</td>
+            <td>Yes (HTTPS / TLS)</td>
+          </tr>
+          <tr>
+            <td><strong>Personal Info</strong></td>
+            <td>Name, email, phone, credentials</td>
+            <td><em>Not Collected</em></td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <strong>Data Sharing:</strong> No personal data is sold. Technical and advertising identifiers are only shared with authorized advertising partners (Google Mobile Ads) for the operational purposes listed above.
+      </p>
+    </article>
+
+    <!-- Section 5 -->
+    <article class="policy-card">
+      <h2>5. Children&rsquo;s Privacy &amp; COPPA / GDPR-K Compliance</h2>
+      <p>
+        Strawberry Crossmath is an educational, fun math crossword puzzle game suitable for all ages. Protecting the privacy of young players is of paramount importance to us.
+      </p>
+      <ul>
+        <li><strong>No Knowing Collection:</strong> We do not knowingly collect, store, or solicit personal information from children under the age of 13 (or under 16 in jurisdictions governed by the European Union General Data Protection Regulation / GDPR-K).</li>
+        <li><strong>Google Play Families Policy:</strong> All advertisements delivered within Strawberry Crossmath comply with Google Play Families Policy standards. When configured for family audiences, ads served are family-safe, non-personalized, and do not track children for behavioral targeting.</li>
+        <li><strong>Parental Inquiries:</strong> If you are a parent or legal guardian and believe that personal information has been unintentionally collected, please contact us at <a href="mailto:support@strawberrycrossmath.com">support@strawberrycrossmath.com</a>. We will promptly take steps to delete any such information.</li>
+      </ul>
+    </article>
+
+    <!-- Section 6 -->
+    <article class="policy-card">
+      <h2>6. Data Security</h2>
+      <p>
+        We prioritize the security and integrity of user interactions:
+      </p>
+      <ul>
+        <li><strong>Encryption in Transit:</strong> All network communications handled by third-party advertising SDKs are transmitted using strong HTTPS / Transport Layer Security (TLS 1.2+).</li>
+        <li><strong>Isolated Local Storage:</strong> Game progress data (such as puzzle state, stars, and unlocked levels) is strictly isolated within the Android application sandbox on your physical device.</li>
+      </ul>
+    </article>
+
+    <!-- Section 7 -->
+    <article class="policy-card">
+      <h2>7. Data Retention &amp; User Deletion Rights</h2>
+      <p>
+        Because we do not operate remote user account servers, we do not retain identifiable personal records on developer databases.
+      </p>
+      <p>
+        <strong>Your Deletion Rights:</strong>
+      </p>
+      <ul>
+        <li><strong>Clear Game Data Locally:</strong> You can completely erase all local game data, level progress, and preferences at any time by going to your Android device&rsquo;s <em>Settings &gt; Apps &gt; Strawberry Crossmath &gt; Storage &gt; Clear Storage / Clear Data</em>.</li>
+        <li><strong>Request Assistance:</strong> You may submit any data privacy or deletion inquiry to us at <a href="mailto:support@strawberrycrossmath.com">support@strawberrycrossmath.com</a>, and we will fulfill your request promptly.</li>
+      </ul>
+    </article>
+
+    <!-- Section 8 -->
+    <article class="policy-card">
+      <h2>8. How to Reset or Opt-Out of Personalized Advertising</h2>
+      <p>
+        Android gives you full native control over your Google Advertising ID (AAID) and personalized ads. If you prefer not to receive personalized advertisements:
+      </p>
+      <div class="opt-out-steps">
+        <ol>
+          <li>Open your Android device&rsquo;s <strong>Settings</strong> app.</li>
+          <li>Scroll down and select <strong>Google</strong> (or <strong>Privacy</strong> on newer versions of Android).</li>
+          <li>Tap on <strong>Ads</strong> (or <strong>Ad Privacy</strong>).</li>
+          <li>Select <strong>Reset advertising ID</strong> to unlink past browsing activity from your current ID.</li>
+          <li>Select <strong>Delete advertising ID</strong> to prevent apps from accessing an advertising identifier altogether.</li>
+          <li>Alternatively, enable <strong>Opt out of Ads Personalization</strong> (where available).</li>
+        </ol>
+      </div>
+      <p>
+        Even after opting out or deleting your advertising ID, you may still see non-personalized ads based on the general context of the game.
+      </p>
+    </article>
+
+    <!-- Section 9 -->
+    <article class="policy-card">
+      <h2>9. Changes to This Privacy Policy</h2>
+      <p>
+        We may periodically update this Privacy Policy to reflect app updates, technical improvements, or changes in applicable legal and regulatory requirements. Any modifications will be posted directly to this page with an updated &ldquo;Last Updated&rdquo; date at the top of the document.
+      </p>
+    </article>
+
+    <!-- Section 10 -->
+    <article class="policy-card">
+      <h2>10. Contact Information</h2>
+      <p>
+        If you have any questions, feedback, or privacy-related requests regarding this Privacy Policy or Strawberry Crossmath, please reach out to our support team:
+      </p>
+      <div class="contact-banner">
+        <p style="margin-bottom: 6px; font-weight: 700; font-size: 1.1rem;">Developer Support &amp; Privacy Contact</p>
+        <p style="margin-bottom: 8px;">Email: <a href="mailto:support@strawberrycrossmath.com">support@strawberrycrossmath.com</a></p>
+        <p style="font-size: 0.88rem; color: #C3D5E4;">Application: Strawberry Crossmath &nbsp;|&nbsp; KotlinKnights Team</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Strawberry Crossmath. All rights reserved.</p>
+      <p style="margin-top: 4px; font-size: 0.82rem;">Designed for Google Play Store compliance and family-friendly gaming.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
