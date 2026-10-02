@@ -6,6 +6,11 @@
   <title>Privacy Policy - Strawberry Crossmath</title>
   <meta name="description" content="Official Privacy Policy for Strawberry Crossmath mobile game. Compliant with Google Play Store Policies, Google Mobile Ads (AdMob), COPPA, and Data Safety guidelines.">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ktconsole.github.io/strawberry-crossmath/">
+  <meta property="og:title" content="Privacy Policy - Strawberry Crossmath">
+  <meta property="og:description" content="Official Privacy Policy for Strawberry Crossmath mobile game. Compliant with Google Play Store Policies, Google Mobile Ads (AdMob), COPPA, and Data Safety guidelines.">
+  <meta property="og:url" content="https://ktconsole.github.io/strawberry-crossmath/">
+  <meta property="og:type" content="website">
   <style>
     :root {
       --primary: #334B5F;
@@ -28,6 +33,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -91,7 +100,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 14px;
-      margin: -24px auto 32px;
+      margin: -24px auto 24px;
     }
 
     .summary-card {
@@ -120,6 +129,53 @@
       color: var(--text-muted);
     }
 
+    /* Quick Navigation Pills */
+    .toc-nav {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+
+    .toc-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toc-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .toc-pill {
+      font-size: 0.82rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #F0F5F9;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+
+    .toc-pill:hover {
+      background: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
     main {
       padding-bottom: 60px;
     }
@@ -131,6 +187,7 @@
       box-shadow: var(--shadow);
       padding: 32px;
       margin-bottom: 24px;
+      scroll-margin-top: 24px;
     }
 
     h2 {
@@ -193,10 +250,17 @@
       border-left-color: var(--accent-green);
     }
 
+    .data-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
     .data-table {
       width: 100%;
       border-collapse: collapse;
-      margin: 16px 0;
       font-size: 0.92rem;
     }
 
@@ -245,6 +309,25 @@
       color: #FFB17A;
       font-size: 1.1rem;
       word-break: break-all;
+    }
+
+    .copy-email-btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--accent);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .copy-email-btn:hover {
+      background: #e47730;
+      transform: translateY(-1px);
     }
 
     footer {
@@ -312,8 +395,25 @@
       </div>
     </div>
 
+    <!-- Quick Navigation Index -->
+    <nav class="toc-nav" aria-label="Table of contents">
+      <div class="toc-title">📑 Quick Jump To Section:</div>
+      <div class="toc-pills">
+        <a href="#section-1" class="toc-pill">1. Overview</a>
+        <a href="#section-2" class="toc-pill">2. No Personal Data</a>
+        <a href="#section-3" class="toc-pill">3. AdMob &amp; Ads</a>
+        <a href="#section-4" class="toc-pill">4. Data Safety Table</a>
+        <a href="#section-5" class="toc-pill">5. Children &amp; COPPA</a>
+        <a href="#section-6" class="toc-pill">6. Data Security</a>
+        <a href="#section-7" class="toc-pill">7. Data Deletion</a>
+        <a href="#section-8" class="toc-pill">8. Ad ID Opt-Out</a>
+        <a href="#section-9" class="toc-pill">9. Policy Changes</a>
+        <a href="#section-10" class="toc-pill">10. Contact Us</a>
+      </div>
+    </nav>
+
     <!-- Section 1 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-1">
       <h2>1. Overview &amp; Introduction</h2>
       <p>
         Welcome to <strong>Strawberry Crossmath</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;). We are committed to safeguarding your privacy and ensuring transparency regarding any data processed when you download, install, and play our mathematical crossword puzzle game.
@@ -327,7 +427,7 @@
     </article>
 
     <!-- Section 2 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-2">
       <h2>2. Information We Do NOT Collect</h2>
       <p>
         To preserve your privacy and simplicity:
@@ -342,7 +442,7 @@
     </article>
 
     <!-- Section 3 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-3">
       <h2>3. Third-Party Advertising &amp; Analytics (Google AdMob)</h2>
       <p>
         Strawberry Crossmath is free to play and is supported by non-intrusive advertisements. We integrate the official <strong>Google Mobile Ads SDK (AdMob)</strong> to serve banner, interstitial, and rewarded hint advertisements.
@@ -365,66 +465,68 @@
     </article>
 
     <!-- Section 4 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-4">
       <h2>4. Google Play Data Safety Compliance</h2>
       <p>
         In accordance with the Google Play Store Data Safety requirements, the table below provides a complete summary of data types and their handling:
       </p>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Data Category</th>
-            <th>Data Types</th>
-            <th>Collected By</th>
-            <th>Purpose</th>
-            <th>Encrypted in Transit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Device or Other IDs</strong></td>
-            <td>Google Advertising ID (AAID)</td>
-            <td>Google Mobile Ads (AdMob)</td>
-            <td>Advertising, analytics, fraud prevention</td>
-            <td>Yes (HTTPS / TLS)</td>
-          </tr>
-          <tr>
-            <td><strong>Location</strong></td>
-            <td>Coarse / approximate location (from IP)</td>
-            <td>Google Mobile Ads (AdMob)</td>
-            <td>Regional ad serving, fraud detection</td>
-            <td>Yes (HTTPS / TLS)</td>
-          </tr>
-          <tr>
-            <td><strong>App Info &amp; Performance</strong></td>
-            <td>Crash logs, diagnostics, latency metrics</td>
-            <td>Google Mobile Ads (AdMob)</td>
-            <td>App performance, analytics</td>
-            <td>Yes (HTTPS / TLS)</td>
-          </tr>
-          <tr>
-            <td><strong>App Activity</strong></td>
-            <td>Ad views, clicks, interactions</td>
-            <td>Google Mobile Ads (AdMob)</td>
-            <td>Ad measurement &amp; attribution</td>
-            <td>Yes (HTTPS / TLS)</td>
-          </tr>
-          <tr>
-            <td><strong>Personal Info</strong></td>
-            <td>Name, email, phone, credentials</td>
-            <td><em>Not Collected</em></td>
-            <td>N/A</td>
-            <td>N/A</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="data-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Data Types</th>
+              <th>Collected By</th>
+              <th>Purpose</th>
+              <th>Encrypted in Transit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Device or Other IDs</strong></td>
+              <td>Google Advertising ID (AAID)</td>
+              <td>Google Mobile Ads (AdMob)</td>
+              <td>Advertising, analytics, fraud prevention</td>
+              <td>Yes (HTTPS / TLS)</td>
+            </tr>
+            <tr>
+              <td><strong>Location</strong></td>
+              <td>Coarse / approximate location (from IP)</td>
+              <td>Google Mobile Ads (AdMob)</td>
+              <td>Regional ad serving, fraud detection</td>
+              <td>Yes (HTTPS / TLS)</td>
+            </tr>
+            <tr>
+              <td><strong>App Info &amp; Performance</strong></td>
+              <td>Crash logs, diagnostics, latency metrics</td>
+              <td>Google Mobile Ads (AdMob)</td>
+              <td>App performance, analytics</td>
+              <td>Yes (HTTPS / TLS)</td>
+            </tr>
+            <tr>
+              <td><strong>App Activity</strong></td>
+              <td>Ad views, clicks, interactions</td>
+              <td>Google Mobile Ads (AdMob)</td>
+              <td>Ad measurement &amp; attribution</td>
+              <td>Yes (HTTPS / TLS)</td>
+            </tr>
+            <tr>
+              <td><strong>Personal Info</strong></td>
+              <td>Name, email, phone, credentials</td>
+              <td><em>Not Collected</em></td>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>
         <strong>Data Sharing:</strong> No personal data is sold. Technical and advertising identifiers are only shared with authorized advertising partners (Google Mobile Ads) for the operational purposes listed above.
       </p>
     </article>
 
     <!-- Section 5 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-5">
       <h2>5. Children&rsquo;s Privacy &amp; COPPA / GDPR-K Compliance</h2>
       <p>
         Strawberry Crossmath is an educational, fun math crossword puzzle game suitable for all ages. Protecting the privacy of young players is of paramount importance to us.
@@ -437,7 +539,7 @@
     </article>
 
     <!-- Section 6 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-6">
       <h2>6. Data Security</h2>
       <p>
         We prioritize the security and integrity of user interactions:
@@ -449,7 +551,7 @@
     </article>
 
     <!-- Section 7 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-7">
       <h2>7. Data Retention &amp; User Deletion Rights</h2>
       <p>
         Because we do not operate remote user account servers, we do not retain identifiable personal records on developer databases.
@@ -464,7 +566,7 @@
     </article>
 
     <!-- Section 8 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-8">
       <h2>8. How to Reset or Opt-Out of Personalized Advertising</h2>
       <p>
         Android gives you full native control over your Google Advertising ID (AAID) and personalized ads. If you prefer not to receive personalized advertisements:
@@ -485,7 +587,7 @@
     </article>
 
     <!-- Section 9 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-9">
       <h2>9. Changes to This Privacy Policy</h2>
       <p>
         We may periodically update this Privacy Policy to reflect app updates, technical improvements, or changes in applicable legal and regulatory requirements. Any modifications will be posted directly to this page with an updated &ldquo;Last Updated&rdquo; date at the top of the document.
@@ -493,7 +595,7 @@
     </article>
 
     <!-- Section 10 -->
-    <article class="policy-card">
+    <article class="policy-card" id="section-10">
       <h2>10. Contact Information</h2>
       <p>
         If you have any questions, feedback, or privacy-related requests regarding this Privacy Policy or Strawberry Crossmath, please reach out to our support team:
@@ -502,6 +604,9 @@
         <p style="margin-bottom: 6px; font-weight: 700; font-size: 1.1rem;">Developer Support &amp; Privacy Contact</p>
         <p style="margin-bottom: 8px;">Email: <a href="mailto:support@strawberrycrossmath.com">support@strawberrycrossmath.com</a></p>
         <p style="font-size: 0.88rem; color: #C3D5E4;">Application: Strawberry Crossmath &nbsp;|&nbsp; KotlinKnights Team</p>
+        <div>
+          <button class="copy-email-btn" onclick="copySupportEmail(this)">Copy Email Address</button>
+        </div>
       </div>
     </article>
   </main>
@@ -513,5 +618,36 @@
     </div>
   </footer>
 
+  <script>
+    function copySupportEmail(btn) {
+      var email = 'support@strawberrycrossmath.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(function() {
+          btn.innerText = 'Email Copied! ✓';
+          setTimeout(function() { btn.innerText = 'Copy Email Address'; }, 2500);
+        }).catch(function() {
+          fallbackCopy(btn, email);
+        });
+      } else {
+        fallbackCopy(btn, email);
+      }
+    }
+    function fallbackCopy(btn, text) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        btn.innerText = 'Email Copied! ✓';
+        setTimeout(function() { btn.innerText = 'Copy Email Address'; }, 2500);
+      } catch (e) {
+        window.prompt('Copy email address:', text);
+      }
+      document.body.removeChild(ta);
+    }
+  </script>
 </body>
 </html>
